@@ -1,0 +1,34 @@
+h1{
+    color:chartreuse; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    color:tomato;
+    font-size:21px;
+}
+
+.chapo{
+    font-size: 48px;
+}
+
+.header{
+    background: lightgrey;
+    padding:48px;
+    margin:48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+.header-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: span 2;
+}
+
+.header-grid{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
