@@ -1,1 +1,1 @@
-https://tancredepeyronne.github.io
+https://tancredepeyronne.github.io/index.html
