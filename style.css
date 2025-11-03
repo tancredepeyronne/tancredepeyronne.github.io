@@ -1,0 +1,85 @@
+.body-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 20px;
+    margin: 40px;
+}
+
+body{
+    min-width: 650px;
+    width: 100%;
+
+}
+
+a:hover {
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.boldoblique{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+.soustitre{
+    font-family: Arial, Helvetica, sans-serif;
+   font-weight: lighter;
+   font-weight: lighter;
+}
+.lieu{
+    font-family: Arial, Helvetica, sans-serif;
+   font-weight: lighter;
+   font-style: oblique;
+}
+
+br{
+    display: block;
+    content: "";
+    margin-top: 0.5em;
+}
+
+.labeur{
+    font-family: Arial, Helvetica, sans-serif;
+   font-weight: lighter;
+   font-weight: lighter;
+}
+
+img{
+    object-position: left bottom;
+}
+
+
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.sticky {
+  position: sticky;
+  top: 10px;
+}
+
+.video-container video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
