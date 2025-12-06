@@ -1,1 +1,1 @@
-tancredepeyronne.github.io/portfolio.html/
+tancredepeyronne.github.io/portfolio.html
