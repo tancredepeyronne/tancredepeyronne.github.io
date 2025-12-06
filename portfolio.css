@@ -79,6 +79,13 @@ body {
     align-items: start;
 }
 
+.grid4{ 
+  display: grid;
+  grid-template-columns: 600px;
+  gap: 5px;
+  overflow-wrap: break-word;
+    object-fit:contain;}
+
 header {
      display: grid;
             grid-template-columns: repeat(2,auto);
@@ -175,7 +182,7 @@ main .liste {
 }
 
 main .liste li {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 400;
     margin-bottom: 5px;
     letter-spacing: 0px;
@@ -279,6 +286,13 @@ main .liste li {
 margin-top: 10px;
 margin-bottom: 10px;
    }
+
+   .grid4{ 
+  display: grid;
+  grid-template-columns: 600px 600px;
+  gap: 10px;
+  overflow-wrap: break-word;
+    object-fit:contain;}
 
 .grid2 {
   display: grid;
