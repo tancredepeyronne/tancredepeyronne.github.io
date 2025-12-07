@@ -23,20 +23,21 @@ p{
     bottom: 20px;
     right: 20px;
     color: blue;
-    padding: 2px 5px;
+    padding: 5px 10px;
     text-decoration: none;
     font-size: 40px;
     font-family: "helvetica-lt-pro", sans-serif;
-  font-weight: 700;
-  letter-spacing: -1pt;
-   z-index: 99999;
-  
+    font-weight: 700;
+    letter-spacing: -1pt;
+    z-index: 9999;
+    cursor: pointer;
 }
 
-.btn-top:hover{
-  text-decoration: none;
-  color:blue;
+.btn-top:hover {
+    text-decoration: none;
+    background-color: red;
 }
+
 
 a{
   text-decoration: none;

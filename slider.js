@@ -56,8 +56,13 @@ window.addEventListener('resize', () => {
   updateSlider();
 });
 
+
 const btnTop = document.querySelector('.btn-top');
-btnTop.addEventListener('click', e => {
-  e.preventDefault();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+btnTop.addEventListener('click', function(e) {
+    e.preventDefault(); // empêche le jump par défaut
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // scroll fluide
+    });
 });
