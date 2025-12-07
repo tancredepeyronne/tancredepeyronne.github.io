@@ -7,7 +7,6 @@
 
 .cv{
   font-size: 25px;
-
 }
 
 p{
@@ -15,49 +14,36 @@ p{
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
-  
 }
 
+/* début configuration du BOUTON TOP pour revenir en haut de la page*/
+
 .btn-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: blue;
-    padding: 5px 10px;
-    text-decoration: none;
-    font-size: 40px;
-    font-family: "helvetica-lt-pro", sans-serif;
-    font-weight: 700;
-    letter-spacing: -1pt;
-    z-index: 9999;
-    cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: blue;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "helvetica-lt-pro", sans-serif;
+  font-weight: 700;
+  letter-spacing: -1pt;
+  z-index: 9999;
+  cursor: pointer;
 }
 
 .btn-top:hover {
-    text-decoration: none;
-    background-color: red;
+  text-decoration: none;
+  background-color: red;
 }
+
+/* fin configuration du BOUTON TOP pour revenir en haut de la page*/
 
 
 a{
   text-decoration: none;
   color:black;
-}
-
-footer{
-    display: grid;
-    background-color: red;
-    color: blue;
-  
-            grid-template-columns: repeat(2,auto);
-            justify-content: space-between ;
-            font-family: "helvetica-lt-pro", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  padding: 1%;
-    margin-top: 1%;
-
-  
 }
 
 a:hover{
@@ -66,147 +52,160 @@ a:hover{
   background-color: red;
 }
 
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    color: #000;
-    background: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+  background: #fff;
 }
-
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    align-items: start;
-}
-
-.grid4{ 
-  display: grid;
-  grid-template-columns: 374px;
-  gap: 5px;
-  overflow-wrap: break-word;
-    object-fit:contain;
-  }
 
 header {
-     display: grid;
-            grid-template-columns: repeat(2,auto);
-            justify-content: space-between;
-            align-items: bottom;
-    margin-bottom: 60px;
-    border-bottom: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: space-between;
+  align-items: bottom;
+  margin-bottom: 60px;
+  border-bottom: 1px solid black;
 }
 
 .headervar {
-     display: grid;
-            grid-template-columns: repeat(2,auto);
-            justify-content: space-between;
-            align-items: bottom;
-    margin-bottom: 0px;
-    border-bottom: 1px solid black;}
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  justify-content: space-between;
+  align-items: bottom;
+  margin-bottom: 0px;
+  border-bottom: 1px solid black;
+}
 
- .grid2 {
+footer{
+  display: grid;
+  background-color: red;
+  color: blue;  
+  grid-template-columns: repeat(2,auto);
+  justify-content: space-between ;
+  font-family: "helvetica-lt-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  align-items: start;
+}
+
+.grid2 {
   display: grid;
   grid-template-columns: 310px;
   width: 310px;
   gap: 10px;
   overflow-wrap: break-word;
   object-fit:contain;
- }
+}
 
- .grid3 {
+.grid3 {
   display: grid;
   grid-template-columns: 310px;
   gap: 5px;
   overflow-wrap: break-word;
-    object-fit:contain;
+  object-fit:contain;
  }
 
- img{
+.grid4{ 
+  display: grid;
+  grid-template-columns: 1fr; /* colonne flexible */
+  width: 100%;                /* ne déborde plus */
+  max-width: 100%;      
+  gap: 5px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  object-fit:contain;
+}
+
+img{
  display: block;
  max-width: 100%;
  }
 
 h1 {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0;
-    letter-spacing: -1pt;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -1pt;
 }
-
-h1 {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0;
-    letter-spacing: -1pt;
-}
-
 
 h1:hover {
-    background-color: red;
-    color:blue
+  background-color: red;
+  color:blue
 }
-
-
 
 .subtitle{
   background-color: red;
-   color: blue;
-    font-family: "helvetica-lt-pro", sans-serif;
+  color: blue;
+  font-family: "helvetica-lt-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
-    width: fit-content;
-    margin-bottom: 0px;
-   }
+  width: fit-content;
+  margin-bottom: 0px;
+}
 
 .apropos {
-    text-decoration: none;
-    color: #000;
-    font-size: 8px;
-    width: fit-content;
-    height: fit-content;
+  text-decoration: none;
+  color: #000;
+  font-size: 8px;
+  width: fit-content;
+  height: fit-content;
 }
 
 
 .apropos:hover {
   background-color: red;
-   color: blue;
-   font-weight: bolder;
-   cursor: pointer;
-    }
+  color: blue;
+  font-weight: bolder;
+  cursor: pointer;
+}
 
+
+
+/* début configuration de la LISTE en page d'accueil */
 
 main .liste {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 main .liste li {
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 5px;
-    letter-spacing: 0px;
-    width: fit-content;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  letter-spacing: 0px;
+  width: fit-content;
 }
 
 .liste li:hover {
-   background-color: red;
-   color: blue;
-   font-weight: bolder;
-   cursor: pointer;
+  background-color: red;
+  color: blue;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
+/* fin configuration de la LISTE en page d'accueil */
+
+/* début configuration du SLIDER en page d'accueil */
 
 .grid .slider-wrapper {
-  margin: 0;   /* supprime les marges éventuelles */
-  padding: 0;  /* supprime les paddings */
+  margin: 0;  
+  padding: 0;  
 }
 
 .slider-wrapper {
   width: 100%;
-  overflow: hidden; /* cache les images hors du viewport */
+  overflow: hidden; 
   position: relative;
 }
 
@@ -216,7 +215,7 @@ main .liste li {
 
 .slides {
   display: flex;        /* met toutes les slides sur une ligne */
-  transition: transform 0.5s ease-in-out; /* pour l'animation */
+  transition: transform 0.7s ease-in-out; /* pour l'animation */
 }
 
 .slide {
@@ -226,36 +225,55 @@ main .liste li {
 }
 
 .slide img {
-  width: 100%;          /* image s’adapte à la slide */
+  width: 100%;         
   display: block;
 }
 
+/* fin configuration du SLIDER en page d'accueil */
+
+
+/* début configuration du DESIGN RESPONSIVE pour le format web */
 
 @media(min-width: 768px){
 
+  .grid2 {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    gap: 10px;
+    overflow-wrap: break-word;
+  }
   .grid3 {
-  display: grid;
-  grid-template-columns: 600px;
-  gap: 5px;
-  overflow-wrap: break-word;
+    display: grid;
+    grid-template-columns: 600px;
+    gap: 5px;
+    overflow-wrap: break-word;
     object-fit:contain;
- }
+  }
+
+  .grid4{ 
+    display: grid;
+    grid-template-columns: 600px 600px;
+    gap: 10px;
+    overflow-wrap: break-word;
+    object-fit:contain;
+  }
 
   main .liste li {
     font-size: 45px;
     font-weight: 400;
     margin-bottom: 12px;
     letter-spacing: 0px;
-    width: fit-content;}
+    width: fit-content;
+  }
 
-    h1 {
+  h1 {
     font-size: 60px;
     font-weight: 700;
     margin: 0;
     letter-spacing: -1pt;
-    }
+  }
     
-    h1:hover {
+  h1:hover {
     font-size: 60px;
     font-weight: 700;
     margin: 0;
@@ -263,69 +281,59 @@ main .liste li {
     background-color: red;
     color:blue;
     cursor: pointer ;
-}
-
-    .apropos {
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;}
-
-    header {
-     display: grid;
-            grid-template-columns: repeat(2,auto);
-            justify-content: space-between;
-            align-items: baseline;
-    margin-bottom: 60px;
-}
-
-.subtitle{
-  background-color: red;
-   color: blue;
-    font-family: "helvetica-lt-pro", sans-serif;
-  font-weight: 400;
-  font-size: 52px;
-  width: fit-content;
-margin-top: 10px;
-margin-bottom: 10px;
-   }
-
-   .grid4{ 
-  display: grid;
-  grid-template-columns: 600px 600px;
-  gap: 10px;
-  overflow-wrap: break-word;
-    object-fit:contain;}
-
-.grid2 {
-  display: grid;
-  grid-template-columns: 600px 600px;
-  gap: 10px;
-  overflow-wrap: break-word;
- }
-
-   .liste li:hover {
-   background-color: red;
-   color: blue;
-   font-weight: bolder;
-   cursor: pointer;
-   font-size: 45px;
-}
   }
 
-.projet {
+  .apropos {
     text-decoration: none;
     color: #000;
+    font-size: 16px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+
+  .subtitle{
+    background-color: red;
+    color: blue;
+    font-family: "helvetica-lt-pro", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
     width: fit-content;
-    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+   .liste li:hover {
+    background-color: red;
+    color: blue;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 45px;
+  }
 }
+
+/* fin configuration du DESIGN RESPONSIVE pour le format web */
+
+.projet {
+  text-decoration: none;
+  color: #000;
+  width: fit-content;
+  height: fit-content;
+}
+
 .projet:hover {
   background-color: red;
-   color: blue;
-   cursor: pointer;
+  color: blue;
+  cursor: pointer;
     }
 
 
-
+/* ajout helvetica adobe fonts*/
 
 .light{
   font-family: "helvetica-lt-pro", sans-serif;
@@ -363,9 +371,7 @@ margin-bottom: 10px;
   font-style: italic;
   }
 
-
-
-
+/* fin ajout helvetica adobe fonts*/
 
 .tageblatt{
   font-family:"tageblatt";

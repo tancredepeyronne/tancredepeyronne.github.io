@@ -29,7 +29,7 @@ function nextSlide() {
 function startSlider() {
   measureSlides();
   updateSlider();
-  setInterval(nextSlide, 2000);
+  setInterval(nextSlide, 2500);
 }
 
 // On attend que toutes les images du slider soient chargées
@@ -57,12 +57,4 @@ window.addEventListener('resize', () => {
 });
 
 
-const btnTop = document.querySelector('.btn-top');
 
-btnTop.addEventListener('click', function(e) {
-    e.preventDefault(); // empêche le jump par défaut
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // scroll fluide
-    });
-});
