@@ -55,3 +55,9 @@ window.addEventListener('resize', () => {
   measureSlides();
   updateSlider();
 });
+
+const btnTop = document.querySelector('.btn-top');
+btnTop.addEventListener('click', e => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
