@@ -81,10 +81,11 @@ body {
 
 .grid4{ 
   display: grid;
-  grid-template-columns: 600px;
+  grid-template-columns: 374px;
   gap: 5px;
   overflow-wrap: break-word;
-    object-fit:contain;}
+    object-fit:contain;
+  }
 
 header {
      display: grid;
