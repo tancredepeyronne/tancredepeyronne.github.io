@@ -16,17 +16,27 @@ function getOffset(i) {
 }
 
 function updateSlider() {
-  measureSlides(); // Mise à jour des tailles à chaque resize/load
   const offset = getOffset(index);
   slides.style.transform = `translateX(-${offset}px)`;
 }
 
+// Passe à la slide suivante
 function nextSlide() {
   index = (index + 1) % slideWidths.length;
   updateSlider();
 }
 
-window.addEventListener('resize', updateSlider);
-window.addEventListener('load', updateSlider);
+// Mesure initiale dès que le DOM est prêt
+document.addEventListener('DOMContentLoaded', () => {
+  measureSlides();
+  updateSlider();
+  setInterval(nextSlide, 2000);
+});
 
-setInterval(nextSlide, 2000);
+// Re-mesure les slides quand la fenêtre change de taille
+window.addEventListener('resize', () => {
+  measureSlides();
+  updateSlider();
+});
+
+// Ajuste la largeur si les images change
