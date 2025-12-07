@@ -24,8 +24,15 @@
         <span class="boldoblique">T</span>YP<span class="light">O</span><span class="bold">G</span>R<span class="lightoblique">A</span>P<span class="bold">H</span>IQ<span class="light">U</span>E</p>
 </main>
 
-<div class="grid2">
+<div class="gridtriple">
 
+  <img src="photos_portfolio_web/affiche_swag_leopard.jpg" alt="affiche swag is not dead">
+  <img src="photos_portfolio_web/affiche_swag_toile_de_jouy.jpg" alt="affiche question de point de vue">
+  <img src="photos_portfolio_web/affiche_swag_typo.jpg" alt="affiche argument d'autorité">
+
+</div>
+
+<div class="grid2">
   <p>
     Triptyque d'affiches typographiques sur le néologisme « swag ».<br><br>
 
@@ -35,19 +42,15 @@
     <br><br>
    –  <span class="oblique">Question de point de vue</span> représentant swag en tant qu'adjectif fonctionnant comme une étiquette, transformant quoi que ce soit en swag peu importe les marqueurs socio-culturels ;
    <br><br>
-   – <span class="oblique">Argument d'autorité</span> soulignant la manière dont le  mot « swag » une fois substantivé s'autonomise et s'élève au-delà du fouillis complexe créé par le langage, devenant même une graisse typographique, une façon d'écrire et de parler à part entière.
-  </p>
+   – <span class="oblique">Argument d'autorité</span> soulignant la manière dont le  mot « swag » une fois substantivé s'autonomise et s'élève au-delà du fouillis complexe créé par le langage, devenant même une graisse typographique, une façon d'écrire et de parler à part entière.<br><br>
 
-  <img src="photos_portfolio_web/mockup_affiches_swag.jpg" alt="triptyque">
-  <img src="photos_portfolio_web/affiche_swag_leopard.jpg" alt="affiche swag is not dead">
-  <img src="photos_portfolio_web/affiche_swag_toile_de_jouy.jpg" alt="affiche question de point de vue">
-  <img src="photos_portfolio_web/affiche_swag_typo.jpg" alt="affiche argument d'autorité">
-    
-  <p>
-    Affiches 400 x 600 mm <br>
+   <img src="photos_portfolio_web/mockup_affiches_swag.jpg" alt="triptyque">
+    <br><br>
+   Affiches 400 x 600 mm <br>
    Projet ÉSAD
   </p>
 
+</div>
 </div>
 
 <footer>
@@ -57,6 +60,37 @@
   </p>
   
 </footer>
+
+<!-- LIGHTBOX (HTML) -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">x</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- LIGHTBOX (JS) -->
+<script>
+  const images = document.querySelectorAll(".gridtriple img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const close = document.querySelector(".lightbox-close");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add("active");
+    });
+  });
+
+  close.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("active");
+    }
+  });
+</script>
 
 </body>
 </html>

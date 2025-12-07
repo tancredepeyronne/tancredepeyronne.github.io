@@ -13,7 +13,7 @@
   <a href="#top" class="btn-top">^</a>
 
 <header class="headervar">
-  <a href="index.html"><h1><span class="light">T</span><span class="regular">a</span><span class="bold">n</span><span class="regular">cr</span><span class="lightoblique">è</span><span class="regular">d</span><span class="light">e</span> <span class="regular"></span>P<span class="light">e</span><span class="oblique">y</span><span class="regular">r</span><span class="boldoblique">o</span><span class="light">n</span><span class="light">N</span><span class="regular">n</span><span class="lightoblique">n</span><span class="bold">nn</span>e</h1></a> 
+  <a href="index.html" alt="page d'accueil"><h1><span class="light">T</span><span class="regular">a</span><span class="bold">n</span><span class="regular">cr</span><span class="lightoblique">è</span><span class="regular">d</span><span class="light">e</span> <span class="regular"></span>P<span class="light">e</span><span class="oblique">y</span><span class="regular">r</span><span class="boldoblique">o</span><span class="light">n</span><span class="light">N</span><span class="regular">n</span><span class="lightoblique">n</span><span class="bold">nn</span>e</h1></a> 
 
   <a href="a-propos.html" class="apropos" alt="redirection vers la page à propos">À PROPOS</a>
 </header>
@@ -51,6 +51,37 @@
   </p>
 
 </footer>
+
+<!-- LIGHTBOX (HTML) -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">x</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- LIGHTBOX (JS) -->
+<script>
+  const images = document.querySelectorAll(".grid3 img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const close = document.querySelector(".lightbox-close");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add("active");
+    });
+  });
+
+  close.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("active");
+    }
+  });
+</script>
 
 </body>
 </html>

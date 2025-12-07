@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tancrède Peyronne</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bsz2tly.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <div id="top"></div>
+  <a href="#top" class="btn-top">^</a>
+
+<header class="headervar">
+  <a href="index.html" alt="page d'accueil"><h1><span class="light">T</span><span class="regular">a</span><span class="bold">n</span><span class="regular">cr</span><span class="lightoblique">è</span><span class="regular">d</span><span class="light">e</span> <span class="regular"></span>P<span class="light">e</span><span class="oblique">y</span><span class="regular">r</span><span class="boldoblique">o</span><span class="light">n</span><span class="light">N</span><span class="regular">n</span><span class="lightoblique">n</span><span class="bold">nn</span>e</h1></a> 
+
+  <a href="a-propos.html" class="apropos">À PROPOS</a>
+</header>
+
+<main class="grid">
+   
+ <p class="subtitle">
+    <span class="oblique">L</span>A<span class="bold">N</span>G<span class="light">U</span>E <br><span class="boldoblique">D</span>E M*<span class="bold">L</span>I<span class="bold">È</span>R<span class="oblique">E</span>
+</p>
+</main>
+
+<div class="gridquad">
+    <img src="photos_portfolio_web/point_de_tension.jpg" alt="point de tension">
+    <img src="photos_portfolio_web/point_de_fuite.jpg" alt="point de fuite">
+    <img src="photos_portfolio_web/circa.jpg" alt="circa">
+    <img src="photos_portfolio_web/abus_de_langage.jpg" alt="abus de langage">
+</div>
+
+
+<div class="grid2">
+
+    
+  <p>
+   Conception de quatre couvertures de pochettes vinyles du single <span class="oblique">C'est une pute</span> de Fatal Bazooka.<br>
+   Deux pochettes ont dû être réalisées à la main ou avec des logiciels, les deux autres avec un outil d'Intelligence Artificielle.
+   <br><br>
+   Les quatre pochettes ouvrent des réflexions sur la banalisation d'un sexisme pérenne et la manière dont le langage et ses outils participent à la sexualisation constante de la femme : 
+   <br><br>
+   – <span class="oblique">Point de tension</span> souligne la manière dont les nouveaux dispositifs linguistiques mis en place dans une logique d'inclusion, n'empêchent pas la sexualisation dès lors qu'un passage au féminin s'opère. Bien au contraire, ici le point médian devient l'arme même du crime ; 
+   <br><br>
+   – <span class="oblique">Point de fuite</span> explore le deuxième organe sexualisant après la langue : les yeux. Tapies dans l’ombre, ces machines à sexualiser nous épient, nous fixent inlassablement et dénudent ;
+   <br><br>
+    – <span class="oblique">circa</span> représentant la constante sexualisation des femmes, toutes époques confondues, est une photographie fabriquée par IA conçue comme un travail d’archive.Le titre amputé de sa date questionne sur la temporalité du sexisme : Depuis quand ? Jusqu’à quand ? ;
+    <br><br>
+    – <span class="oblique">Abus de langage</span>, générée par IA, évoquant la manière dont la langue, au sens propre comme figuré, est manipulée à des fins sexistes, un manuscrit posé sur la langue comme symbole des archaïsmes sexiste dont nous héritons ;
+    <br><br>
+    Pochettes 315 x 315 mm <br>
+    Projet ÉSAD
+</p>
+
+</div>
+
+<footer>
+
+  <p>
+    <span class="bold">&copy; 2025 Tancrède Peyronne</span>
+  </p>
+  
+</footer>
+
+<!-- LIGHTBOX (HTML) -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">x</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- LIGHTBOX (JS) -->
+<script>
+  const images = document.querySelectorAll(".gridquad img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const close = document.querySelector(".lightbox-close");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add("active");
+    });
+  });
+
+  close.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("active");
+    }
+  });
+</script>
+
+</body>
+</html>
