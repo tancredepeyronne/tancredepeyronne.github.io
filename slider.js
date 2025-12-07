@@ -20,23 +20,38 @@ function updateSlider() {
   slides.style.transform = `translateX(-${offset}px)`;
 }
 
-// Passe à la slide suivante
 function nextSlide() {
   index = (index + 1) % slideWidths.length;
   updateSlider();
 }
 
-// Mesure initiale dès que le DOM est prêt
-document.addEventListener('DOMContentLoaded', () => {
+// Fonction pour démarrer le slider **après que toutes les images soient chargées**
+function startSlider() {
   measureSlides();
   updateSlider();
   setInterval(nextSlide, 2000);
+}
+
+// On attend que toutes les images du slider soient chargées
+const images = slideElements.map(slide => slide.querySelector('img'));
+let loadedCount = 0;
+
+images.forEach(img => {
+  if (img.complete) {
+    loadedCount++;
+  } else {
+    img.addEventListener('load', () => {
+      loadedCount++;
+      if (loadedCount === images.length) startSlider();
+    });
+  }
 });
 
-// Re-mesure les slides quand la fenêtre change de taille
+// Si toutes les images sont déjà chargées (cache), on démarre immédiatement
+if (loadedCount === images.length) startSlider();
+
+// Re-mesure si la fenêtre change de taille
 window.addEventListener('resize', () => {
   measureSlides();
   updateSlider();
 });
-
-// Ajuste la largeur si les images change
